@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Индивидуальный проект</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="main" class="screen">
+    <h1 class="title">Индивидуальный проект</h1>
+
+    <button class="btn enter-btn" onclick="enter()">Вход</button>
+</div>
+
+<div id="inside" class="screen hidden">
+    <button class="btn exit-btn" onclick="exit()">Выход</button>
+    <h1>Вы успешно зашли внутрь проекта</h1>
+</div>
+
+<script>
+function enter() {
+    document.getElementById("main").classList.add("hidden");
+    document.getElementById("inside").classList.remove("hidden");
+}
+
+function exit() {
+    document.getElementById("inside").classList.add("hidden");
+    document.getElementById("main").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>

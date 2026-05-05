@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: white;
+    overflow: hidden;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn {
+    padding: 14px 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #0077cc;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* мягкая анимация */
+.btn:hover {
+    transform: scale(1.05); /* было сильнее — теперь аккуратно */
+    background: #eaf4ff;
+}
+
+/* вход — выше и длиннее */
+.enter-btn {
+    position: absolute;
+    bottom: 120px; /* выше */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px; /* длиннее */
+}
+
+/* выход — прямо в угол */
+.exit-btn {
+    position: absolute;
+    top: 1px;
+    right: 25px;
+}
+
+/* текст */
+#inside h1 {
+    text-align: center;
+    margin-top: 200px;
+}
